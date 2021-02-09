@@ -1,0 +1,48 @@
+<div id="holder">
+  <div id="text">Filter</div>
+  <form class="example-form"  style="width: 50%">
+  <mat-form-field class="example-full-width" appearance="outline"  style="width: 80%">
+    <mat-label>Enter ID</mat-label>
+    <textarea matInput placeholder="Ex. 12345"></textarea>
+  </mat-form-field>
+</form>
+  <div style="display: flex; width: 35%; height: 40%;">
+    <button mat-button id="add" (click)="onAddRow()">Add</button>
+    <button mat-raised-button color="warn" [disabled]="isDisabled" (click)="onDeleteRow()">Remove</button>
+    <div *ngIf="isUpdate; else update">
+      <button mat-raised-button color="primary" (click)="onUpdateTrainee()" style="margin-left: 5%;" [disabled]="isDisabled">
+        Save changes
+      </button>
+    </div>
+    <ng-template #update>
+      <button mat-raised-button color="primary" (click)="onSave()" style="margin-left: 5%;">Add Trainee</button>
+    </ng-template>
+
+  </div>
+</div>
+
+<div style="display: flex;">
+<ag-grid-angular
+    style="width: 65%; height: 400px; margin-left: 5%;"
+    class="ag-theme-alpine"
+    [rowData]="trains"
+    [columnDefs]="columnDefs"
+    [paginationPageSize]="10"
+    [pagination]="true"
+    [rowSelection]="rowSelection"
+    (selectionChanged)="onSelectionChanged($event)"
+    (gridReady)="onGridReady($event)"
+    >
+</ag-grid-angular>
+
+  <ag-grid-angular
+    style="width: 25%; height: 400px; margin-left: 2%;"
+    class="ag-theme-alpine"
+    [rowData]="rowData"
+    [columnDefs]="columnDefs2"
+    (gridReady)="onGridReadyDetails($event)"
+    >
+</ag-grid-angular>
+</div>
+
+

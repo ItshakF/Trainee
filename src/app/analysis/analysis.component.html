@@ -1,0 +1,23 @@
+<div style="display: flex; align-items: baseline">
+  <div style="width: 10%; margin-left: 5%">IDs:</div>
+  <mat-form-field appearance="outline" style="width: 80%">
+    <mat-label>IDs</mat-label>
+    <mat-select [formControl]="toppings" multiple>
+      <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+<div style="display: flex; align-items: baseline">
+  <div style="width: 10%; margin-left: 5%">Subjects:</div>
+  <mat-form-field appearance="outline" style="width: 80%">
+    <mat-label>Subjects</mat-label>
+    <mat-select [formControl]="toppings" multiple>
+      <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+<div id="charts">
+  <div id="chart_1" class="main-charts">1</div>
+  <div id="chart_2" class="main-charts">2</div>
+  <div id="chart_3" class="hidden-chart">3</div>
+</div>

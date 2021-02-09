@@ -1,0 +1,13 @@
+<div id="dashboard">
+  <div id="menu" class="half">
+    <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+    <mat-button-toggle value="data" routerLink="data">Data</mat-button-toggle>
+    <mat-button-toggle value="analysis" routerLink="analysis">Analysis</mat-button-toggle>
+    <mat-button-toggle value="monitor" routerLink="monitor">Monitor</mat-button-toggle>
+  </mat-button-toggle-group>
+  </div>
+  <div id="content">
+    <router-outlet></router-outlet>
+  </div>
+
+</div>
