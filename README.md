@@ -1,27 +1,11 @@
-# Mataf
+Hi and welcome on the Trainee Test.
+To start to use the program start by copying the program into a new directory by typing : git clone https://github.com/ItshakF/Trainee.git.
+next run npm i to install all packages.
+Finally run ng serve -o
+You can now see the program already open in your browser.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
+I have to say there are a lot of things that i didn't do. the reason for this is because I started the project only saturday night.
+I have good reasons for starting that late and I hope you will take in consideration the fact that I would have done the project completely with an other delay.
+Thanks.
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+ItshakF
