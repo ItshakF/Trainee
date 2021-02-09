@@ -3,7 +3,7 @@
   <mat-form-field appearance="outline" style="width: 80%">
     <mat-label>IDs</mat-label>
     <mat-select [formControl]="toppings" multiple>
-      <mat-option *ngFor="let topping of toppingList" [value]="topping" (onselect)="externalFilterChanged(value)">{{topping}}</mat-option>
+      <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
     </mat-select>
   </mat-form-field>
 </div>
